@@ -1,0 +1,68 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Adjust as needed */
+    color: #333; /* Text color */
+    line-height: 1.6;
+    padding-top: 60px; /* Adjust to fit header height */
+}
+
+/* Main content styling */
+/* Main content styling */
+main {
+    padding: -150px;
+    margin-top: 60px; /* Adjust to fit header height */
+}
+
+/* About section styling */
+.about-section {
+    background-color: #ffffff; /* White background */
+    color: rgb(0, 0, 0); /* Black text color for contrast */
+    padding: 20px; /* Padding inside the section */
+    margin: 20px; /* Margin around the section */
+    width: calc(100% - 40px); /* Adjust width to account for margin */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center vertically */
+    border-radius: 10px; /* Rounded corners */
+    border: 0.8px solid black; /* Thin black border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-section .content {
+    flex: 1; /* Takes up space as needed */
+    margin-right: 20px; /* Space between content and image */
+}
+
+.about-section .content h2 {
+    font-size: 2em; /* Size of the heading */
+    font-weight: bold; /* Bold font for heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.about-section .content p {
+    font-size: 1.2em; /* Size of the paragraph */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.about-section .image {
+    flex: 1; /* Takes up space as needed */
+}
+
+.about-section .image img {
+    max-width: 100%; /* Responsive image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.about-section:hover {
+    transform: translateY(-10px); /* Moves the box up when hovered */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
